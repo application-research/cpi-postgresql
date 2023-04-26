@@ -1,6 +1,6 @@
 apiVersion: v2
-name: cpi-edge
-description: Customer Provisioned Infrastructure Edge for Kubernetes
+name: cpi-postgresql
+description: Customer Provisioned Infrastructure PostgreSQL for Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
 #

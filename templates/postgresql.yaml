@@ -8,6 +8,8 @@ metadata:
   namespace: "customer-{{ $.Values.global.customer.name }}"
   labels:
     team: acid
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 
 spec:
   teamId: "acid"

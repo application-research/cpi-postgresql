@@ -46,5 +46,8 @@ global:
   customer:
     name: testcustomer
   products:
-    postgresql:
-      tshirtSize: lake
+    postgres:
+      - name: db-fws-ev2
+        tshirtSize: marbles
+      - name: testdb
+        tshirtSize: thunder

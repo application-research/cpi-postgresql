@@ -65,7 +65,7 @@ Create the name of the service account to use
 Tshirt Sizer
 */}}
 {{- define "cpi-postgresql.getSizeConfig" -}}
-{{- $tshirtSize := index $.Values.global.products.postgresql.tshirtSize }}
-{{- $sizeConfig := index $.Values.sizes $tshirtSize }}
+{{- $tshirtSize := index .tshirtSize }}
+{{- $sizeConfig := index .Values.sizes $tshirtSize }}
 {{- $sizeConfig | toYaml | nindent 0 }}
 {{- end }}

@@ -1,10 +1,11 @@
-{{- $sizeConfig := include "cpi-edge.getSizeConfig" . | fromYaml }}
+{{- range .Values.global.products.postgres }}
+{{- $sizeConfig := include "cpi-postgresql.getSizeConfig" (dict "Values" $.Values "tshirtSize" .tshirtSize) | fromYaml }}
 kind: "postgresql"
 apiVersion: "acid.zalan.do/v1"
 
 metadata:
-  name: "db-fws-ev2"
-  namespace: "customer-{{ .Values.global.customer.name }}"
+  name: "{{ .name }}"
+  namespace: "customer-{{ $.Values.global.customer.name }}"
   labels:
     team: acid
 
@@ -33,3 +34,5 @@ spec:
     limits:
       cpu: "{{ $sizeConfig.cpuLimit }}"
       memory: "{{ $sizeConfig.memoryLimit }}"
+---
+{{- end }}

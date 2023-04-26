@@ -1,0 +1,50 @@
+# Default values for customer-provisioned-infrastructure Delta.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+customer:
+  name: testcustomer
+
+product: postgresql
+
+tshirtSize: marbles
+
+sizes:
+  marbles:
+    cpuLimit: "500m"
+    cpuRequest: "100m"
+    memoryLimit: "500Mi"
+    memoryRequest: "100Mi"
+    storage: "8Gi"
+  pebbles:
+    cpuLimit: "1000m"
+    cpuRequest: "250m"
+    memoryLimit: "1Gi"
+    memoryRequest: "250Mi"
+    storage: "16Gi"
+  thunder:
+    cpuLimit: "8000m"
+    cpuRequest: "2000m"
+    memoryLimit: "4Gi"
+    memoryRequest: "512Mi"
+    storage: "128Gi"
+  titan:
+    cpuLimit: "16000m"
+    cpuRequest: "2000m"
+    memoryLimit: "8Gi"
+    memoryRequest: "1Gi"
+    storage: "256Gi"
+  goliath:
+    cpuLimit: "32000m"
+    cpuRequest: "2000m"
+    memoryLimit: "16Gi"
+    memoryRequest: "1Gi"
+    storage: "512Gi"
+
+# These are for testing, and will be overridden by a "real" customer
+global:
+  customer:
+    name: testcustomer
+  products:
+    postgresql:
+      tshirtSize: lake

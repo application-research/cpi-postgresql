@@ -13,31 +13,31 @@ sizes:
   marbles:
     cpuLimit: "1000m"
     cpuRequest: "250m"
-    memoryLimit: "1Gi"
+    memoryLimit: "2Gi"
     memoryRequest: "100Mi"
     storage: "8Gi"
   pebbles:
     cpuLimit: "2000m"
     cpuRequest: "400m"
-    memoryLimit: "2Gi"
+    memoryLimit: "4Gi"
     memoryRequest: "250Mi"
     storage: "16Gi"
   thunder:
     cpuLimit: "8000m"
     cpuRequest: "2000m"
-    memoryLimit: "4Gi"
+    memoryLimit: "8Gi"
     memoryRequest: "512Mi"
     storage: "128Gi"
   titan:
     cpuLimit: "16000m"
     cpuRequest: "2000m"
-    memoryLimit: "8Gi"
+    memoryLimit: "16Gi"
     memoryRequest: "1Gi"
     storage: "256Gi"
   goliath:
     cpuLimit: "32000m"
     cpuRequest: "2000m"
-    memoryLimit: "16Gi"
+    memoryLimit: "32Gi"
     memoryRequest: "1Gi"
     storage: "512Gi"
 

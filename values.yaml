@@ -11,15 +11,15 @@ tshirtSize: marbles
 
 sizes:
   marbles:
-    cpuLimit: "500m"
-    cpuRequest: "100m"
-    memoryLimit: "500Mi"
-    memoryRequest: "100Mi"
-    storage: "8Gi"
-  pebbles:
     cpuLimit: "1000m"
     cpuRequest: "250m"
     memoryLimit: "1Gi"
+    memoryRequest: "100Mi"
+    storage: "8Gi"
+  pebbles:
+    cpuLimit: "2000m"
+    cpuRequest: "400m"
+    memoryLimit: "2Gi"
     memoryRequest: "250Mi"
     storage: "16Gi"
   thunder:

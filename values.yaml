@@ -15,13 +15,13 @@ sizes:
     cpuRequest: "250m"
     memoryLimit: "2Gi"
     memoryRequest: "100Mi"
-    storage: "8Gi"
+    storage: "32Gi"
   pebbles:
     cpuLimit: "2000m"
     cpuRequest: "400m"
     memoryLimit: "4Gi"
     memoryRequest: "250Mi"
-    storage: "16Gi"
+    storage: "64Gi"
   thunder:
     cpuLimit: "8000m"
     cpuRequest: "2000m"

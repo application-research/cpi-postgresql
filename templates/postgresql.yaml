@@ -27,9 +27,13 @@ spec:
   databases:
     deltadb: delta
     edgedb: edge
+  # Enable MetalLB/loadbalancer access to each deployment
+  enableMasterLoadBalancer: true
   allowedSourceRanges:
     # IP ranges to access your cluster go here
-
+    # We allow all traffic from within FDI by default
+    - 10.24.0.0/16
+    - 10.42.0.0/16
   resources:
     requests:
       cpu: "{{ $sizeConfig.cpuRequest }}"

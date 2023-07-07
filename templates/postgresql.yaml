@@ -24,9 +24,11 @@ spec:
   users:
     delta: []
     edge: []
+    edge_urid: []
   databases:
     deltadb: delta
     edgedb: edge
+    edge_urid_db: edge_urid
   # Enable MetalLB/loadbalancer access to each deployment
   enableMasterLoadBalancer: true
   allowedSourceRanges:

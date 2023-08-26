@@ -22,10 +22,12 @@ spec:
   volume:
     size: "{{ $sizeConfig.storage }}"
   users:
+    singularity: []
     delta: []
     edge: []
     edge_urid: []
   databases:
+    singularitydb: singularity
     deltadb: delta
     edgedb: edge
     edge_urid_db: edge_urid

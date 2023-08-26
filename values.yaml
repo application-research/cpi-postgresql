@@ -44,10 +44,8 @@ sizes:
 # These are for testing, and will be overridden by a "real" customer
 global:
   customer:
-    name: testcustomer
+    name: test
   products:
     postgres:
-      - name: db-fws-ev2
-        tshirtSize: marbles
       - name: testdb
         tshirtSize: thunder
